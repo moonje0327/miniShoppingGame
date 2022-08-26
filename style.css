@@ -1,0 +1,108 @@
+:root {
+  /* color */
+  --color-black: #3f454d;
+  --color-white: #ffffff;
+  --color-blue: #3b88c3;
+  --color-yellow: #fbbe28;
+  --color-pink: #fd7f84;
+  --color-light-grey: #dfdfdf;
+  /* size */
+  --size-btn: 60px;
+  --button-font-size: 18px;
+  --base-space: 8px;
+  --size-border: 4px;
+  --size-thumbnail: 40px;
+  --font-size: 18px;
+  /* animation */
+  --animation-duration: 300ms
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  transition: transform var(--animation-duration) ease;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform var(--animation-duration) ease;
+  margin: var(--base-space);
+}
+
+.btn:hover,
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.imgBtn {
+  width: var(--size-btn);
+  height: var(--size-btn);
+}
+
+.colorBtn {
+  font-size: var(--button-font-size);
+  padding: calc(var(--base-space)*2);
+  border-radius: var(--size-border);
+}
+
+.blue {
+  background-color: var(--color-blue);
+}
+.yellow {
+  background-color: var(--color-yellow);
+}
+.pink {
+  background-color: var(--color-pink);
+}
+
+.items {
+  width: 60%;
+  height: 60vh;
+  list-style: none;
+  padding-left: 0;
+  overflow-y: scroll;
+  overflow: auto;
+}
+
+/* 스크롤바 안보이고 기능만 적용하기 */
+.items::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.item {
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  padding: var(--base-space);
+  margin-bottom: var(--base-space);
+}
+
+.item_thumbnail {
+  width: var(--size-thumbnail);
+  height: var(--size-thumbnail);
+}
+
+.item_description {
+  margin-left: var(--base-space);
+  font-size: var(--font-size);
+}
