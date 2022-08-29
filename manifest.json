@@ -2,10 +2,10 @@
   "background_color": "#ffffff",
   "dir": "ltr",
   "display": "standalone",
-  "name": "moonje0327.github",
+  "name": "minishopping",
   "orientation": "any",
   "scope": "/",
-  "short_name": "moonje0327.github",
+  "short_name": "minishopping",
   "start_url": "/",
   "theme_color": "#ffffff"
 }
